@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio</title>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+          }
+          window.addEventListener("scroll", reveal);
+          
+          // To check the scroll position on page load
+          reveal();
+
+        function reveal_python() {
+            var reveals = document.querySelectorAll(".reveal_python");
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+          }
+          window.addEventListener("scroll", reveal_python);
+          
+          // To check the scroll position on page load
+          reveal_python();
+
+        function reveal_front() {
+            var reveals = document.querySelectorAll(".reveal_front");
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+          }
+          window.addEventListener("scroll", reveal_front);
+          
+          // To check the scroll position on page load
+          reveal_front();
+
+        function reveal_java() {
+            var reveals = document.querySelectorAll(".reveal_java");
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 0;
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+          }
+          window.addEventListener("scroll", reveal_java);
+          
+          // To check the scroll position on page load
+          reveal_java();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="perfil">
+            <img src="assets/foto.jpg" alt="Minha foto">
+        </div>
+        <h2 class="nome">Vinícios Dotto</h2>
+        <div class="navigator">
+            <a href="#sobremim">Sobre mim</a>
+            <a href="#contact">Contatos</a>
+        </div>
+    </header>
+    <main class="center">
+        <div class="infos">
+            <h2>Vinícios Dotto</h2>
+            <p>Desenvolvedor Front-End</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/viniciosdotto/" rel="noopener" target="_blank">Linkedin</a>
+            <a href="https://github.com/vinidotto" rel="noopener" target="_blank">GitHub</a>
+        </div>
+    </main>
+    <div class="conteudos">
+        <div class="sobre_mim">
+            <h2>SOBRE MIM <a name="sobremim"></a></h2>
+        </div>
+        <div class="conteiner_text_1">
+            <div class="conteiner_list">
+                <ul>
+                    <li>NOME: VINÍCIOS DOTTO</li>
+                    <li>IDADE: 19 ANOS</li>
+                    <li>CIDADE: RESTINGA SECA</li>
+                </ul>
+            </div>
+            <div class="conteiner_text">
+                <p>Meu nome é Vinícios, estou cursando Sistemas de informação na Antonio Meneghetti Faculdade, estou buscando desenvolver habilidades em desenvolvimento web. Gosto muito de games, principalmente Counter Strike. Nas horas vagas também gosto de praticar esportes, principalmente basquete e futebol.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="conteudos_2">
+            <div class="habilidades">
+                <h2 name="hability">HABILIDADES</h2>
+            </div>
+            <div class="conteiner_all">
+                <div class="conteiner_hard">
+                        <div class="skill-name">
+                            <h2>Python</h2>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="reveal_python" >
+                            </div>
+                        </div>       
+                        <div class="skill-name_2">
+                            <h2>HTML</h2>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="reveal_front" >
+                            </div>
+                        </div>
+                        <div class="skill-name_3">
+                            <h2>CSS</h2>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="reveal_front" >
+                            </div>
+                        </div>    
+                        <div class="skill-name_3">
+                            <h2>JavaScript</h2>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="reveal_java" >
+                            </div>
+                        </div>                        
+                    </div>
+                <div class="conteiner_soft">
+                    <div class="conteiner">
+                        <div class="skill-name">
+                            <h2>Comunicação</h2>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="reveal" >
+                            </div>
+                        </div>       
+                        <div class="skill-name_2">
+                            <h2>Responsabilidade</h2>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="reveal"  >
+                            </div>
+                        </div> 
+                        <div class="skill-name_2">
+                            <h2>Resiliência</h2>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="reveal" >
+                            </div>
+                        </div> 
+                        <div class="skill-name_2">
+                            <h2>Ética</h2>
+                        <div class="progress_bar">
+                            <div class="reveal">
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteudos_3">
+        <div class="contatos">
+            <h2>CONTATOS <a name="contact"></a></h2>
+        </div>
+        <div class="conteiner_text_3">
+            <div class="assets">
+                <a href="https://www.instagram.com/vini.dotto/"  target="_blank"  alt="">
+                    <img src="assets/insta.png" alt="" width="30" height="30">
+                </a>
+                <a href="https://www.linkedin.com/in/viniciosdotto/"  target="_blank"   alt="">
+                    <img src="assets/linkedin.png" alt="" width="30" height="30">
+                </a>
+                <a href="https://github.com/vinidotto"  target="_blank"  alt="">
+                    <img src="assets/github.png" alt="" width="30" height="30">
+                </a>
+            <div class="mail">
+                <a href="mailto: vinidotto02@gmail.com"  target="_blank">
+                    <img src="assets/email.png" alt="" width="30" height="30">
+                </a>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
